@@ -15,3 +15,10 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+
+# I don't want to show my secrets.yml
+/config/secrets.yml
+
+#dont show .env
+/.env

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @spot.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <iframe src= <%= @spot.location %> width="500" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</p>
+
+<%= link_to 'Edit', edit_spot_path(@spot) %> |
+<%= link_to 'Back', spots_path %>
