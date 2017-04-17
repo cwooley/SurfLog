@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Wave height:</strong>
+  <%= @session.wave_height %>
+</p>
+
+<p>
+  <strong>Wave direction:</strong>
+  <%= @session.wave_direction %>
+</p>
+
+<p>
+  <strong>Wind direction:</strong>
+  <%= @session.wind_direction %>
+</p>
+
+<p>
+  <strong>Board:</strong>
+  <%= @session.board %>
+</p>
+
+<p>
+  <strong>Tide:</strong>
+  <%= @session.tide %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @session.body %>
+</p>
+
+<%= link_to 'Edit', edit_session_path(@session) %> |
+<%= link_to 'Back', sessions_path %>

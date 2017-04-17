@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170417191204) do
+ActiveRecord::Schema.define(version: 20170417230338) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "sessions", force: :cascade do |t|
+    t.string   "wave_height"
+    t.string   "wave_direction"
+    t.string   "wind_direction"
+    t.string   "board"
+    t.string   "tide"
+    t.text     "body"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "spots", force: :cascade do |t|
     t.string   "name"
